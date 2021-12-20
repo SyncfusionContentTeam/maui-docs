@@ -541,7 +541,7 @@ For the crossing in date time horizontal axis, date object should be provided as
 <chart:SfCartesianChart>
     
     <chart:SfCartesianChart.PrimaryAxis>
-            <chart:DateTimeAxis CrossesAt="0" RenderNextToCrossingValue="False" />
+            <chart:DateTimeAxis />
     </chart:SfCartesianChart.PrimaryAxis>
 
     <chart:SfCartesianChart.SecondaryAxis>
@@ -556,8 +556,6 @@ For the crossing in date time horizontal axis, date object should be provided as
 
 SfCartesianChart chart = new SfCartesianChart();
 NumericalAxis primaryAxis = new NumericalAxis();
-primaryAxis.CrossesAt = 0;
-primaryAxis.RenderNextToCrossingValue = false;
 chart.PrimaryAxis = primaryAxis;
 NumericalAxis secondaryAxis = new NumericalAxis();
 secondaryAxis.CrossesAt = new DateTime(2021, 01, 01);;
